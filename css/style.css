@@ -3,3 +3,92 @@
     margin: 0;
     font-family: sans-serif;
 }
+
+
+/* header */
+nav {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 8vh;
+    padding: 2vh 2vw;
+}
+
+nav ul , nav ul li, nav ul li a, nav button {
+    display: inline-block;
+    padding: 0;
+}
+
+nav a {
+    transform: translateY(-0.8vh);
+    text-decoration: none;
+    color: black;
+    margin-left: 2vw;
+}
+
+nav ul:nth-of-type(2) li:nth-of-type(1) a {
+    margin-left: 19vw;
+}
+
+nav a:hover {
+    color: cyan;
+    text-shadow: 0.2vh 0.2vh black;
+}
+
+nav button {
+    transform: translateY(-0.8vh);
+    background-color: blue;
+    color: white;
+    padding: 1vh 1.5vw;
+    border: none;
+    margin-left: 3vw;
+}
+
+nav button:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0.2vh 0.2vh black;
+}
+
+header div {
+    background-color: cadetblue;
+    padding: 15vh;
+}
+
+header div h1 {
+    font-size: 9vh;
+    margin-bottom: 5vh;
+}
+
+header div p, header div button, header div span {
+    width: 20vw;
+}
+
+header div p {
+    margin-bottom: 5vh;
+}
+
+header div button {
+    background-color: blue;
+    color: white;
+    padding: 1.5vh 3vw;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+header div button:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0.2vh 0.2vh black;
+}
+
+header div span {
+    display: block;
+    margin-bottom: 5vh;
+}
+
+header div img {
+    transform: scale(0.4) translate(-15vw, -185vh);
+}
+
+
