@@ -52,16 +52,18 @@ nav button:hover {
 
 header div {
     background-color: cadetblue;
+    width: 100vw;
+    height: 100vh;
     padding: 15vh;
 }
 
 header div h1 {
-    font-size: 9vh;
+    font-size: 10vh;
     margin-bottom: 5vh;
 }
 
-header div p, header div button, header div span {
-    width: 20vw;
+header div p, header div span {
+    width: 25vw;
 }
 
 header div p {
@@ -73,7 +75,7 @@ header div button {
     color: white;
     padding: 1.5vh 3vw;
     border: none;
-    margin-bottom: 2vh;
+    margin-bottom: 2.5vh;
 }
 
 header div button:hover {
@@ -84,11 +86,143 @@ header div button:hover {
 
 header div span {
     display: block;
+    font-size: 2vh;
     margin-bottom: 5vh;
 }
 
 header div img {
-    transform: scale(0.4) translate(-15vw, -185vh);
+    transform: scale(0.4) translate(-38vw, -222vh);
 }
 
 
+/* main */
+main section:first-of-type {
+    width: 100vw;
+    height: 240vh;
+    padding: 30vh;
+}
+
+main section:first-of-type h2 {
+    font-size: 5vh;
+}
+
+main section:first-of-type input {
+    transform: translate(0.4vw, -108vh);
+}
+
+.colonna {
+    display: inline-block;
+    transform: translate(-2.5vw, 6vh);
+    width: 20vw;
+    height: 140vh;
+    border: 0.5vh solid grey;
+    margin: 3vh 3vh 3vh 0;
+}
+
+.colonna:nth-of-type(2) {
+    transform: translate(-2.5vw, 17.7vh);
+}
+
+.colonna:nth-of-type(3) {
+    transform: translate(-2.5vw, 17.7vh);
+}
+
+.colonna span:first-of-type {
+    display: block;
+    border-bottom: 0.5vh solid grey;
+}
+
+.colonna h2 {
+    font-size: auto;
+    margin-top: 3vh;
+}
+
+.colonna b {
+    font-size: auto;
+    margin-top: 2vh;
+}
+
+.colonna b:after {
+    content: "\20AC";
+}
+
+.colonna li {
+    list-style: none;
+    margin-top: 3vh;
+}
+
+.colonna li:first-of-type {
+    color: lightgray;
+    margin-top: 3vh;
+}
+
+.colonna button {
+    background-color: blue;
+    color: white;
+    padding: 1.5vh 4vw;
+    border: none;
+    margin-bottom: 2.5vh;
+}
+
+.colonna button:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0.2vh 0.2vh black;
+}
+
+.colonna span {
+    padding-top: 4vh;
+    border-top: 0.3vh solid grey;
+}
+
+.colonna h3 {
+    font-size: auto;
+    margin-top: 3vh;
+}
+
+.colonna ul> li::marker {
+    content: "\2714";
+    color: cyan;
+}
+
+main section:first-of-type div:last-of-type {
+    width: 70vw;
+    height: 50vh;
+    border: 0.5vh solid grey;
+    margin-top: 10vh;
+}
+
+main section:first-of-type div:last-of-type span:first-of-type {
+    display: block;
+    padding-left: 1vw;
+    border-bottom: 0.5vh solid grey;
+}
+
+main section:first-of-type div:last-of-type h2 {
+    font-size: auto;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+main section:first-of-type div:last-of-type h3 {
+    font-size: auto;
+    margin-bottom: 4vh;
+}
+
+main section:first-of-type div:last-of-type span:last-of-type {
+    display: block;
+}
+
+main section:first-of-type div:last-of-type button {
+    transform: translate(48vw, -19vh);
+    background-color: blue;
+    color: white;
+    padding: 1.5vh 5vw;
+    border: none;
+}
+
+main section:first-of-type div:last-of-type button:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0.2vh 0.2vh black;
+}
