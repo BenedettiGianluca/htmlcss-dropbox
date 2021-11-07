@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -38,14 +39,14 @@
 
         <div>
             <h1>Tutto ci&ograve; che ti serve per il lavoro, in un unico posto</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis inventore iure 
-                adipisci quibusdam porro eos rerum optio? Inventore aliquam cupiditate saepe 
-                quibusdam distinctio consequatur quisquam omnis, maiores, molestias debitis 
-                aspernatur.
+            <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili
+                dallo stesso posto. Dropbox Business &egrave; pi&ugrave; di uno spazio di
+                archiviazione sicuro: &egrave; un modo intelligente ed integrato per
+                ottimizzare il flusso di lavoro esistente.
             </p>
             <button type="button">Inizia la tua prova gratuita</button>
             <span>Annulla in qualsiasi momento</span>
-            <span></span>
+            <span class="fa-arrow-down"></span>
             <img src="img/jumbo.png">
         </div>
     </header>
@@ -53,19 +54,23 @@
     <main>
         <section>
             <h1>Trova il piano Dropbox business che fa per te</h1>
-            <input type="checkbox" name="Fatturazione">
-            <input type="checkbox" name="Fatturazione">
+            <div>
+                <input type="radio" name="Fatturazione"> Fatturazione mensile
+                <input type="radio" name="Fatturazione"> Fatturazione annuale
+            </div>
 
             <div class="colonna">
                 <span>Singolo</span>
                 <h2>Professional</h2>
                 <b>19,99 </b>
                 <li>/mese</li>
-                <li>1 utente</li>
-                <li>3 TB di spazio di archiviazione sicuro</li>
-                <li>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</li>
+                <ul>
+                    <li class="fa-user">&nbsp;1 utente</li>
+                    <li class="fa-folder-o">&nbsp;3 TB di spazio di archiviazione sicuro</li>
+                    <li class="fa-pencil">&nbsp;Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</li>
+                </ul>
                 <button type="button">Prova gratis per 30 giorni</button>
-                <span>oppure <a href="#">acquista ora</a></span>
+                <span>oppure</span><a href="#">acquista ora</a>
                 <h3>Punti salienti del piano</h3>
                 <ul>
                     <li>Invia file fino a 100GB con Dropbox transfert</li>
@@ -81,11 +86,13 @@
                 <h2>Standard</h2>
                 <b>19,99 </b>
                 <li>/ utente / mese, a partire da 3 utenti</li>
-                <li>+1 utente</li>
-                <li>3 TB di spazio di archiviazione sicuro</li>
-                <li>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</li>
+                <ul>
+                    <li class="fa-users">&nbsp;+1 utente</li>
+                    <li class="fa-folder-o">&nbsp;3 TB di spazio di archiviazione sicuro</li>
+                    <li class="fa-smile-o">&nbsp;Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</li>
+                </ul>
                 <button type="button">Prova gratis per 30 giorni</button>
-                <span>oppure <a href="#">acquista ora</a></span>
+                <span>oppure</span><a href="#">acquista ora</a>
                 <h3>Punti salienti del piano</h3>
                 <ul>
                     <li>Invia file fino a 100GB con Dropbox transfert</li>
@@ -102,11 +109,13 @@
                 <h2>Advanced</h2>
                 <b>19,99 </b>
                 <li>/ utente / mese, a partire da 3 utenti</li>
-                <li>+1 utente</li>
-                <li>3 TB di spazio di archiviazione sicuro</li>
-                <li>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</li>
+                <ul>
+                    <li class="fa-users">&nbsp;+1 utente</li>
+                    <li class="fa-smile-o">&nbsp;3 TB di spazio di archiviazione sicuro</li>
+                    <li class="fa-pencil">&nbsp;Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</li>
+                </ul>
                 <button type="button">Prova gratis per 30 giorni</button>
-                <span>oppure <a href="#">acquista ora</a></span>
+                <span>oppure</span><a href="#">acquista ora</a>
                 <h3>Punti salienti del piano</h3>
                 <ul>
                     <li>Invia file fino a 100GB con Dropbox transfert</li>
@@ -131,13 +140,16 @@
 
         <section>
             <img src="img/partner.png">
-            <h2></h2>
-            <p></p>
-            <button type="button"></button>
+            <h2>Entra in contatto con un partner Dropbox</h2>
+            <p>Trova un partner Dropbox ed HelloSign di fiducia. Ottieni le soluzioni ed i
+                servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui
+                implementazione, integrazione, gestione e supporto continui.
+            </p>
+            <button type="button">Trova un partner</button>
         </section>
 
         <section>
-            <h1></h1>
+            <h1>Esegui pi&ugrave; operazioni con Dropbox business</h1>
             <img src="img/business-feature-switching-tools.png">
             <img src="img/business-feature-coordinate-it.png">
             <img src="img/business-feature-multi-device.png">
