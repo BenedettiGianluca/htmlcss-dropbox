@@ -8,6 +8,18 @@ p {
     line-height: 3.5vh;
 }
 
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-size: 3.5vh;
+}
+
+h3 {
+    font-size: 2.5vh;
+}
+
 
 /* header */
 nav {
@@ -37,12 +49,12 @@ nav ul:nth-of-type(2) li:nth-of-type(1) a {
 
 nav a:hover {
     color: cyan;
-    text-shadow: 0.2vh 0.2vh black;
+    text-shadow: 0.2vh 0.2vh #0061ff;
 }
 
 nav button {
     transform: translateY(-0.8vh);
-    background-color: blue;
+    background-color: #0061ff;
     color: white;
     padding: 1vh 1.5vw;
     border: none;
@@ -56,7 +68,7 @@ nav button:hover {
 }
 
 header div {
-    background-color: cadetblue;
+    background-color: #b4d0e7;
     width: 98.71vw;
     height: 100vh;
     padding: 15vh;
@@ -76,7 +88,7 @@ header div p {
 }
 
 header div button {
-    background-color: blue;
+    background-color: #0061ff;
     color: white;
     padding: 1.5vh 3vw;
     border: none;
@@ -95,14 +107,17 @@ header div span {
     margin-bottom: 5vh;
 }
 
-.fa-arrow-down::before {
+header div span:last-of-type::before {
     content: "\f063";
     font-family: FontAwesome;
     font-size: 6vh;
 }
 
-header div img {
-    transform: scale(0.4) translate(-38vw, -250vh);
+header div> img {
+    transform: scale(0.4);
+    position: absolute;
+    top: -6.5vh;
+    left: -8vw;
 }
 
 
@@ -113,10 +128,6 @@ main section:first-of-type {
     padding: 30vh 20vh 30vh 30vh;
 }
 
-main section:first-of-type h1 {
-    font-size: 5vh;
-}
-
 main section:first-of-type div:first-of-type {
     transform: translateY(8vh);
 }
@@ -125,7 +136,7 @@ main section:first-of-type div:first-of-type {
     display: inline-block;
     width: 22vw;
     height: 140vh;
-    border: 0.2vh solid grey;
+    border: 0.2vh solid #d0d0d3;
     margin: 3vh 3vh 3vh 0;
 }
 
@@ -142,11 +153,20 @@ main section:first-of-type div:first-of-type {
     text-align: center;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    border-bottom: 0.2vh solid grey;
+    border-bottom: 0.2vh solid #d0d0d3;
+}
+
+#fa-user::before {
+    content: "\f007";
+    font-family: FontAwesome;
+}
+
+#fa-users::before {
+    content: "\f0c0";
+    font-family: FontAwesome;
 }
 
 .colonna h2 {
-    font-size: 3.5vh;
     margin: 4.5vh 0 3vh 2vw;
 }
 
@@ -166,7 +186,7 @@ main section:first-of-type div:first-of-type {
 }
 
 .colonna b + li {
-    color: lightgray;
+    color: #667583;
     font-size: 2.1vh;
     margin: 1.5vh 0 6vh 2vw;
 }
@@ -202,7 +222,7 @@ main section:first-of-type div:first-of-type {
 }
 
 .colonna button {
-    background-color: blue;
+    background-color: #0061ff;
     color: white;
     padding: 1.5vh 2.9vw;
     border: none;
@@ -217,18 +237,17 @@ main section:first-of-type div:first-of-type {
 
 .colonna span:nth-of-type(2) {
     padding-bottom: 4vh;
-    border-bottom: 0.1vh solid grey;
+    border-bottom: 0.1vh solid #d0d0d3;
     margin-left: 2vw;
 }
 
 .colonna a {
     display: inline-block;
-    color: cornflowerblue;
+    color: #0061ff;
     padding-left: 0.3vw;
 }
 
 .colonna h3 {
-    font-size: 2.5vh;
     margin: 10vh 0 3vh 2vw;
 }
 
@@ -238,13 +257,14 @@ main section:first-of-type div:first-of-type {
 
 .colonna h3 + ul> li::marker {
     content: "\2714";
-    color: cyan;
+    color: #0061ff;
 }
 
 main section:first-of-type div:last-of-type {
     width: 69.8vw;
     height: 33vh;
-    border: 0.2vh solid grey;
+    border: 0.2vh solid #d0d0d3;
+    border-top: none;
     margin-top: 10vh;
 }
 
@@ -252,16 +272,20 @@ main section:first-of-type div:last-of-type span:first-of-type {
     display: block;
     text-align: center;
     padding: 1.5vh 0 1.5vh 1vw;
-    border-bottom: 0.2vh solid grey;
+    border-top: 0.2vh solid #e7e7e9;
+    border-bottom: 0.2vh solid #d0d0d3;
+}
+
+main section:first-of-type div:last-of-type span:first-of-type::before {
+    content: "";
+    font-family: FontAwesome;
 }
 
 main section:first-of-type div:last-of-type h2 {
-    font-size: 3.5vh;
     margin: 5vh 0 2.5vh 2vw;
 }
 
 main section:first-of-type div:last-of-type h3 {
-    font-size: 2.5vh;
     margin: 0 0 5vh 2vw;
 }
 
@@ -273,7 +297,7 @@ main section:first-of-type div:last-of-type span:last-of-type {
 
 main section:first-of-type div:last-of-type button {
     transform: translate(46vw, -17vh);
-    background-color: blue;
+    background-color: #0061ff;
     color: white;
     padding: 1.5vh 5vw;
     border: none;
@@ -292,16 +316,20 @@ main section:nth-of-type(2) {
 }
 
 main section:nth-of-type(2) img {
-    transform: scale(0.4) translate(-68.8vw, -100vh);
+    transform: scale(0.4);
+    position: absolute;
+    top: 308vh;
+    left: -12vw;
 }
 
-main section:nth-of-type(2) h2, main section:nth-of-type(2) p, main section:nth-of-type(2) button {
-    transform: translate(40vw, -145vh);
+main section:nth-of-type(2) div:last-of-type {
+    position: absolute;
+    top: 360vh;
+    left: 55vw;
     width: 28vw;
 }
 
 main section:nth-of-type(2) h2 {
-    font-size: 3.5vh;
     margin-bottom: 5vh;
 }
 
@@ -311,16 +339,16 @@ main section:nth-of-type(2) p {
 }
 
 main section:nth-of-type(2) button {
-    background-color: blue;
-    color: white;
-    width: 12vw;
-    padding: 1.5vh 2vw;
-    border: none;
+    background-color: white;
+    color: black;
+    width: 11.5vw;
+    padding: 1.5vh 1.5vw;
+    border: 0.2vh solid black;
 }
 
 main section:nth-of-type(2) button:hover {
-    background-color: cyan;
-    color: black;
+    background-color: darkorange;
+    color: yellow;
     box-shadow: 0.2vh 0.2vh black;
 }
 
@@ -330,15 +358,10 @@ main section:nth-of-type(3) {
     margin-left: 15.4vw;
 }
 
-main section:nth-of-type(3) h1 {
-    font-size: 5vh;
-}
-
 main section:nth-of-type(3) img:nth-of-type(1) {
     position: absolute;
     top: 445vh;
     left: 15.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -346,14 +369,13 @@ main section:nth-of-type(3) img:nth-of-type(2) {
     position: absolute;
     top: 445vh;
     left: 40vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
+
 main section:nth-of-type(3) img:nth-of-type(3) {
     position: absolute;
     top: 445vh;
     left: 64.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -361,7 +383,6 @@ main section:nth-of-type(3) h2:nth-of-type(1) {
     position: absolute;
     top: 478vh;
     left: 15.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -375,14 +396,13 @@ main section:nth-of-type(3) p:nth-of-type(1) {
 
 main section:nth-of-type(3) span:nth-of-type(1) {
     text-decoration: underline;
-    text-decoration-color: grey;
+    text-decoration-color: #808080;
 }
 
 main section:nth-of-type(3) h2:nth-of-type(2) {
     position: absolute;
     top: 478vh;
     left: 40vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -398,7 +418,6 @@ main section:nth-of-type(3) h2:nth-of-type(3) {
     position: absolute;
     top: 478vh;
     left: 64.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -414,7 +433,6 @@ main section:nth-of-type(3) img:nth-of-type(4) {
     position: absolute;
     top: 530vh;
     left: 15.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -422,14 +440,12 @@ main section:nth-of-type(3) img:nth-of-type(5) {
     position: absolute;
     top: 530vh;
     left: 40vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 main section:nth-of-type(3) img:nth-of-type(6) {
     position: absolute;
     top: 530vh;
     left: 64.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -437,7 +453,6 @@ main section:nth-of-type(3) h2:nth-of-type(4) {
     position: absolute;
     top: 563vh;
     left: 15.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -453,7 +468,6 @@ main section:nth-of-type(3) h2:nth-of-type(5) {
     position: absolute;
     top: 563vh;
     left: 40vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -469,7 +483,6 @@ main section:nth-of-type(3) h2:nth-of-type(6) {
     position: absolute;
     top: 563vh;
     left: 64.5vw;
-    font-size: 3.5vh;
     width: 20vw;
 }
 
@@ -484,73 +497,76 @@ main section:nth-of-type(3) p:nth-of-type(6) {
 main section:nth-of-type(4) {
     width: 98.71vw;
     height: 180vh;
-    border: 0.2vh solid grey;
 }
 
 main section:nth-of-type(4) h1 {
-    font-size: 5vh;
     width: 36vw;
     margin: 0 0 4vh 15.4vw;
 }
 
 main section:nth-of-type(4) a {
-    color: cyan;
+    color: #0061ff;
     font-size: 2.2vh;
     margin-left: 15.4vw;
 }
 
 main section:nth-of-type(4) div:first-of-type {
-    background-color: greenyellow;
+    background-color: #a2d39b;
     position: absolute;
     top: 655vh;
     width: 16vw;
     height: 16vw;
-    border: 2vh inset lightgreen;
+    border: 2vh solid #d0e9cd;
 }
 
 main section:nth-of-type(4) div:first-of-type> img {
     transform: scale(0.3) translate(-28vw, 15vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(2) {
+    background-color: #61082b;
     position: absolute;
     top: 655vh;
     left: 16vw;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(2)> img {
     transform: scale(0.3) translate(-25vw, -25vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(3) {
+    background-color: #0093ce;
     position: absolute;
     top: 686vh;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(3)> img {
     transform: scale(0.5) translate(0, 23vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(4) {
+    background-color: #ff1c1c;
     position: absolute;
     top: 686vh;
     left: 16vw;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(4)> img {
     transform: scale(0.3) translate(-25vw, 1vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(5) {
+    background-color: #f5f5f5;
     position: absolute;
     top: 655vh;
     left: 32vw;
@@ -558,7 +574,6 @@ main section:nth-of-type(4) div:nth-of-type(5) {
     width: 34.6vw;
     height: 32vw;
     padding: 0 2.5vw;
-    border: 0.2vh solid blue;
 }
 
 main section:nth-of-type(4) div:nth-of-type(5)> img {
@@ -568,7 +583,7 @@ main section:nth-of-type(4) div:nth-of-type(5)> img {
 main section:nth-of-type(4) div:nth-of-type(5)> hr {
     transform: translateY(-4vh);
     width: 3.5vw;
-    border: 0.05vh solid grey;
+    border: 0.05vh solid #e6e6e7;
 }
 
 main section:nth-of-type(4) div:nth-of-type(5)> span {
@@ -576,66 +591,71 @@ main section:nth-of-type(4) div:nth-of-type(5)> span {
 }
 
 main section:nth-of-type(4) div:nth-of-type(6) {
+    background-color: #d5001f;
     position: absolute;
     top: 655vh;
     left: 66.6vw;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(6)> img {
     transform: scale(0.3) translate(-26vw, 17vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(7) {
+    background-color: #b4d0e7;
     position: absolute;
     top: 655vh;
     left: 82.6vw;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(7)> img {
     transform: scale(0.25) translate(-30vw, 49vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(8) {
+    background-color: #0d2481;
     position: absolute;
     top: 686vh;
     left: 66.6vw;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(8)> img {
     transform: scale(0.3) translate(-25vw, -1vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(9) {
+    background-color: #ffd830;
     position: absolute;
     top: 686vh;
     left: 82.6vw;
     width: 16vw;
     height: 16vw;
-    border: 0.2vh solid red;
 }
 
 main section:nth-of-type(4) div:nth-of-type(9)> img {
     transform: scale(0.5) translate(0, 10vh);
+    filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(161deg) brightness(102%) contrast(103%);
 }
 
 main section:nth-of-type(4) div:nth-of-type(10) {
+    background-color: #b4d0e7;
     position: absolute;
     top: 717vh;
     width: 98.6vw;
     padding: 25vh 48vw 25vh 15vw;
-    border: 0.2vh solid green;
 }
 
 main section:nth-of-type(4) div:nth-of-type(10)> strong {
+    color: #61082b;
     font-size: 5vh;
 }
 
@@ -661,16 +681,15 @@ main section:nth-of-type(5) {
 }
 
 main section:nth-of-type(5) h2 {
-    font-size: 3.5vh;
     padding-bottom: 8vh;
-    border-bottom: 0.2vh solid grey;
+    border-bottom: 0.2vh solid #dcdcde;
 }
 
 main section:nth-of-type(5) b {
     display: block;
     font-size: 2.3vh;
     padding: 6vh 0;
-    border-bottom: 0.2vh solid grey;
+    border-bottom: 0.2vh solid #dcdcde;
 }
 
 main section:nth-of-type(5) div:hover b {
@@ -680,20 +699,22 @@ main section:nth-of-type(5) div:hover b {
 
 main section:nth-of-type(5) b::after {
     float: right;
-    content: "\2b9b";
-    font-size: 3vh;
+    content: "\f078";
+    font-family: FontAwesome;
+    font-size: 2vh;
     line-height: 3vh;
     padding-right: 2vw;
 }
 
 main section:nth-of-type(5) div:hover b::after {
-    content: "\2b98";
-    font-size: 3vh;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-size: 2vh;
 }
 
 main section:nth-of-type(5) p {
     height: 0;
-    color: darkgrey;
+    color: #555555;
     overflow: hidden;
 }
 
@@ -702,7 +723,7 @@ main section:nth-of-type(5) div:hover p {
     overflow: visible;
     font-size: 2.3vh;
     padding: 2vh 0 12vh 0;
-    border-bottom: 0.2vh solid grey;
+    border-bottom: 0.2vh solid #dcdcde;
 }
 
 main section:nth-of-type(5) div::after { /* clearfix */
@@ -717,5 +738,73 @@ footer {
     background-color: black;
     width: 98.71vw;
     height: 100vh;
-    padding: 15vh 10vw 0 10vw;
+    padding: 20vh 8vw 0 7vw;
+}
+
+footer ul {
+    display: inline-block;
+    list-style: none;
+    margin-right: 3.3vw;
+}
+
+footer ul:nth-of-type(5) {
+    vertical-align: top;
+}
+
+footer li:first-of-type {
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5vh;
+}
+
+footer li {
+    margin-bottom: 2vh;
+}
+
+footer li> a {
+    color: white;
+    font-size: 2vh;
+    text-decoration: none;
+}
+
+footer li> a:hover {
+    color: cyan;
+    text-shadow: 0.2vh 0.2vh blue;
+}
+
+footer hr {
+    width: 7vw;
+    border-bottom: 0.05vh solid #bfbfbf;
+    margin: 22vh 0 11vh 3vw;
+}
+
+footer select {
+    background-color: black;
+    color: #666666;
+    width: 4.5vw;
+    border: none;
+    margin-left: 4vw;
+    -webkit-appearance: none;
+}
+
+footer span:first-of-type::after {
+    position: absolute;
+    top: 995.55vh;
+    left: 9.6vw;
+    content: "\f0ac";
+    font-family: FontAwesome;
+    font-size: 2.6vh;
+    color: #999999;
+}
+
+footer span:last-of-type::after {
+    position: absolute;
+    top: 996vh;
+    left: 14.7vw;
+    content: "\f0d8";
+    font-family: FontAwesome;
+    font-size: 1.7vh;
+    color: #666666;
 }
