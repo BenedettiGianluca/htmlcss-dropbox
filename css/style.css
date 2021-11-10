@@ -9,15 +9,15 @@
 }*/
 
 p {
-    line-height: 24px;
+    line-height: 23px;
 }
 
 h1 {
-    font-size: 36.75px;
+    font-size: 36.5px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 23px;
 }
 
 h3 {
@@ -128,28 +128,50 @@ header div> img {
 
 main section:first-of-type {
     width: 100%;
-    height: 1750px;
-    padding: 180px 120px 180px 180px;
+    height: 1600px;
+    padding: 180px 120px 0 180px;
 }
 
 main section:first-of-type div:first-of-type {
-    transform: translateY(102.32px);
+    transform: translateY(55px);
+}
+
+main section:first-of-type input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #d0d0d3;
+    transition: 0.2s all linear;
+    position: relative;
+    top: 1.5px;
+}
+
+main section:first-of-type input:last-of-type {
+    left: 13.5px;
+    margin-right: 14px;
+}
+
+main section:first-of-type input:checked {
+    border: 3.5px solid #0061ff;
 }
 
 .colonna {
     display: inline-block;
-    width: 281.37px;
-    height: 840px;
+    width: 278.5px;
+    height: 940px;
     border: 1.5px solid #d0d0d3;
-    margin: 18px 18px 18px 0;
+    margin: 18px 24px 18px 0;
 }
 
 .colonna:nth-of-type(2) {
-    transform: translateY(20px);
+    transform: translateY(35px);
 }
 
 .colonna:nth-of-type(3), .colonna:nth-of-type(4) {
-    transform: translateY(70px);
+    transform: translateY(75px);
 }
 
 .colonna span:first-of-type {
@@ -176,13 +198,13 @@ main section:first-of-type div:first-of-type {
 .colonna li {
     list-style: none;
     font-size: 12.5px;
-    margin: 0 25.58px 18px 25.58px;
+    margin: 0 17px 24px 17px;
 }
 
 .colonna b + li {
     color: #667583;
     font-size: 12.5px;
-    margin: 9px 0 36px 12px;
+    margin: 9px 0 55px 25.58px;
 }
 
 .colonna li + ul {
@@ -220,11 +242,13 @@ main section:first-of-type div:first-of-type {
 }
 
 .colonna h3 + ul {
-    padding-left: 7,67px;
+    padding-left: 23px;
 }
 
 .colonna h3 + ul> li::marker {
-    content: "\2714";
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 15px;
     color: #0061ff;
 }
 
@@ -279,21 +303,21 @@ main section:first-of-type div:last-of-type button:hover {
 
 main section:nth-of-type(2) {
     width: 892.7px;
-    height: 500px;
-    margin-left: 196.96px;
+    height: 570px;
+    margin-left: 179px;
 }
 
 main section:nth-of-type(2) img {
     transform: scale(0.4);
     position: absolute;
-    top: 1850px;
-    left: -153.47px;
+    top: 2010px;
+    left: -172px;
 }
 
 main section:nth-of-type(2) div:last-of-type {
     position: absolute;
-    top: 2160px;
-    left: 703.42px;
+    top: 2360px;
+    left: 700px;
     width: 358px;
 }
 
@@ -322,42 +346,42 @@ main section:nth-of-type(2) button:hover {
 
 main section:nth-of-type(3) {
     width: 892.7px;
-    height: 850px;
-    margin-left: 196.96px;
+    height: 1250px;
+    margin-left: 179px;
 }
 
 main section:nth-of-type(3) img:nth-of-type(1) {
     position: absolute;
-    top: 2670px;
-    left: 198.24px;
+    top: 2920px;
+    left: 181.24px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) img:nth-of-type(2) {
     position: absolute;
-    top: 2670px;
-    left: 511.58px;
+    top: 2920px;
+    left: 494.58px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) img:nth-of-type(3) {
     position: absolute;
-    top: 2670px;
-    left: 824,92px;
+    top: 2920px;
+    left: 807.92px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) h2:nth-of-type(1) {
     position: absolute;
-    top: 2868px;
-    left: 198.24px;
+    top: 3138px;
+    left: 181.24px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) p:nth-of-type(1) {
     position: absolute;
-    top: 2940px;
-    left: 198.24px;
+    top: 3220px;
+    left: 181.24px;
     font-size: 13.5px;
     width: 255.79px;
 }
@@ -369,120 +393,120 @@ main section:nth-of-type(3) span:nth-of-type(1) {
 
 main section:nth-of-type(3) h2:nth-of-type(2) {
     position: absolute;
-    top: 2868px;
-    left: 511.58px;
+    top: 3138px;
+    left: 494.58px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) p:nth-of-type(2) {
     position: absolute;
-    top: 2940px;
-    left: 511.58px;
+    top: 3220px;
+    left: 494.58px;
     font-size: 13.5px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) h2:nth-of-type(3) {
     position: absolute;
-    top: 2868px;
-    left: 824,92px;
+    top: 3138px;
+    left: 807.92px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) p:nth-of-type(3) {
     position: absolute;
-    top: 2940px;
-    left: 824,92px;
+    top: 3220px;
+    left: 807.92px;
     font-size: 13.5px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) img:nth-of-type(4) {
     position: absolute;
-    top: 3180px;
-    left: 198.24px;
+    top: 3450px;
+    left: 181.24px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) img:nth-of-type(5) {
     position: absolute;
-    top: 3180px;
-    left: 511.58px;
+    top: 3450px;
+    left: 494.58px;
     width: 255.79px;
 }
 main section:nth-of-type(3) img:nth-of-type(6) {
     position: absolute;
-    top: 3180px;
-    left: 824,92px;
+    top: 3450px;
+    left: 807.92px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) h2:nth-of-type(4) {
     position: absolute;
-    top: 3378px;
-    left: 198.24px;
+    top: 3668px;
+    left: 181.24px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) p:nth-of-type(4) {
     position: absolute;
-    top: 3450px;
-    left: 198.24px;
+    top: 3750px;
+    left: 181.24px;
     font-size: 13.5px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) h2:nth-of-type(5) {
     position: absolute;
-    top: 3378px;
-    left: 511.58px;
+    top: 3668px;
+    left: 494.58px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) p:nth-of-type(5) {
     position: absolute;
-    top: 3450px;
-    left: 511.58px;
+    top: 3750px;
+    left: 494.58px;
     font-size: 13.5px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) h2:nth-of-type(6) {
     position: absolute;
-    top: 3378px;
-    left: 824,92px;
+    top: 3668px;
+    left: 807.92px;
     width: 255.79px;
 }
 
 main section:nth-of-type(3) p:nth-of-type(6) {
     position: absolute;
-    top: 3450px;
-    left: 824,92px;
+    top: 3750px;
+    left: 807.92px;
     font-size: 13.5px;
     width: 255.79px;
 }
 
 main section:nth-of-type(4) {
     width: 100%;
-    height: 1100px;
+    height: 1070px;
 }
 
 main section:nth-of-type(4) h1 {
     width: 460.42px;
-    margin: 0 0 24px 196.96px;
+    margin: 0 0 24px 179px;
     font-size: 33px;
 }
 
 main section:nth-of-type(4) a {
     color: #0061ff;
     font-size: 13px;
-    margin-left: 196.96px;
+    margin-left: 179px;
 }
 
 main section:nth-of-type(4) div:first-of-type {
     background-color: #a2d39b;
     position: absolute;
-    top: 3930px;
+    top: 4230px;
     width: 204.63px;
     height: 204.63px;
     border: 12px solid #d0e9cd;
@@ -496,7 +520,7 @@ main section:nth-of-type(4) div:first-of-type> img {
 main section:nth-of-type(4) div:nth-of-type(2) {
     background-color: #61082b;
     position: absolute;
-    top: 3930px;
+    top: 4230px;
     left: 204.63px;
     width: 204.63px;
     height: 204.63px;
@@ -510,7 +534,7 @@ main section:nth-of-type(4) div:nth-of-type(2)> img {
 main section:nth-of-type(4) div:nth-of-type(3) {
     background-color: #0093ce;
     position: absolute;
-    top: 4116px;
+    top: 4416px;
     width: 204.63px;
     height: 204.63px;
 }
@@ -523,7 +547,7 @@ main section:nth-of-type(4) div:nth-of-type(3)> img {
 main section:nth-of-type(4) div:nth-of-type(4) {
     background-color: #ff1c1c;
     position: absolute;
-    top: 4116px;
+    top: 4416px;
     left: 204.63px;
     width: 204.63px;
     height: 204.63px;
@@ -537,7 +561,7 @@ main section:nth-of-type(4) div:nth-of-type(4)> img {
 main section:nth-of-type(4) div:nth-of-type(5) {
     background-color: #f5f5f5;
     position: absolute;
-    top: 3930px;
+    top: 4230px;
     left: 409.26px;
     font-size: 13.5px;
     width: 442.52px;
@@ -562,7 +586,7 @@ main section:nth-of-type(4) div:nth-of-type(5)> span {
 main section:nth-of-type(4) div:nth-of-type(6) {
     background-color: #d5001f;
     position: absolute;
-    top: 3930px;
+    top: 4230px;
     left: 851.78px;
     width: 204.63px;
     height: 204.63px;
@@ -576,7 +600,7 @@ main section:nth-of-type(4) div:nth-of-type(6)> img {
 main section:nth-of-type(4) div:nth-of-type(7) {
     background-color: #b4d0e7;
     position: absolute;
-    top: 3930px;
+    top: 4230px;
     left: 1056.41px;
     width: 204.63px;
     height: 204.63px;
@@ -590,7 +614,7 @@ main section:nth-of-type(4) div:nth-of-type(7)> img {
 main section:nth-of-type(4) div:nth-of-type(8) {
     background-color: #0d2481;
     position: absolute;
-    top: 4116px;
+    top: 4416px;
     left: 851.78px;
     width: 204.63px;
     height: 204.63px;
@@ -604,7 +628,7 @@ main section:nth-of-type(4) div:nth-of-type(8)> img {
 main section:nth-of-type(4) div:nth-of-type(9) {
     background-color: #ffd830;
     position: absolute;
-    top: 4116px;
+    top: 4416px;
     left: 1056.41px;
     width: 204.63px;
     height: 204.63px;
@@ -618,7 +642,7 @@ main section:nth-of-type(4) div:nth-of-type(9)> img {
 main section:nth-of-type(4) div:nth-of-type(10) {
     background-color: #b4d0e7;
     position: absolute;
-    top: 4302px;
+    top: 4602px;
     width: 100%;
     padding: 150px 613.89px 150px 191.84px;
 }
@@ -645,8 +669,8 @@ main section:nth-of-type(4) div:nth-of-type(10)> button:hover {
 
 main section:nth-of-type(5) {
     width: 892.7px;
-    height: 600px;
-    margin-left: 196.96px;
+    height: 580px;
+    margin-left: 179px;
 }
 
 main section:nth-of-type(5) h2 {
@@ -760,8 +784,8 @@ footer select {
 
 footer span:first-of-type::after {
     position: absolute;
-    top: 5972px;
-    left: 122.78px;
+    top: 6242px;
+    left: 124px;
     content: "\f0ac";
     font-family: FontAwesome;
     font-size: 15.5px;
@@ -770,7 +794,7 @@ footer span:first-of-type::after {
 
 footer span:last-of-type::after {
     position: absolute;
-    top: 5976px;
+    top: 6246px;
     left: 188px;
     content: "\f0d8";
     font-family: FontAwesome;
